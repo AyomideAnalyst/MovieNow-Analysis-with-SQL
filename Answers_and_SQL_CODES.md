@@ -14,7 +14,7 @@ SELECT COUNT(DISTINCT movie_id) AS total_movies,
    COUNT(DISTINCT genre) AS total_genre
 FROM movies.movies
 ```
-![]()
+![](Q2.png)
 
 3. What is the total revenue MovieNow has generated?
 ```sql
@@ -24,6 +24,7 @@ FROM movies.renting AS r
 LEFT JOIN movies.movies AS m
 ON r.movie_id = m.movie_id
 ```
+![]()
 
 4. What is the average, minimum and maximum renting price of movies available on MovieNow?
 ```sql
@@ -33,6 +34,8 @@ SELECT ROUND(AVG(renting_price),2) AS average_price,
  ROUND(MAX(renting_price), 2) AS maximum_price
 FROM movies.movies
 ```
+![]()
+
 5. What is the average renting price by genre and how it compares to the overall average renting price of $2.21?.
 ```sql
 -- What is the average, minimum and maximum renting price by genre? 
@@ -47,6 +50,7 @@ ON m.movie_id = r.movie_id
 GROUP BY genre
 ORDER BY average_by_genre DESC
 ```
+![]()
 
 6. Does renting price affect how movies are rented?
 ```sql
@@ -60,7 +64,7 @@ ON m.movie_id = r.movie_id
 GROUP BY genre
 ORDER BY average_price_by_genre DESC
 ```
-
+![]()
 
 #### _Does rating affect how movies are rented?_
 7. What is the average, minimum and maximum rating of all movies?
@@ -72,6 +76,7 @@ SELECT ROUND(AVG(rating),2) AS average_rating,
  MAX(rating) AS maximum_rating
 FROM movies.renting
 ```
+![]()
 
 8. Which movie title(s) has a rating of 1?
 ```sql

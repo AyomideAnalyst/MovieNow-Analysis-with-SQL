@@ -89,6 +89,8 @@ WHERE movie_id IN
     FROM movies.renting
     WHERE rating = 1)
 ```
+![](Q8.png)
+
 9. Which movies have a perfect rating of 10?
 ```sql
 -- Let's identify movie title with the perfect rating of 10
@@ -102,6 +104,8 @@ WHERE movie_id IN
     WHERE rating = 10)
 ORDER BY released_year DESC
 ```
+![](Q9.png)
+
 10. Identify the top 10 movies with the most rentals and their average rating.
 ```sql
 -- Identify the top 10 movies with the most rentals and their average rating
@@ -116,6 +120,7 @@ GROUP BY r.movie_id, title
 ORDER BY total_rent DESC
 LIMIT 10
 ```
+![](Q10.png)
 
 11. Do movies with the rating score of 10 have more rentals?
 ```sql
@@ -131,6 +136,7 @@ WHERE rating = 10
 GROUP BY r.movie_id, title
 ORDER BY total_rent DESC
 ```
+![](Q11.png)
 
 #### _Understanding the customers of MovieNow?_
 12. Who are our customers and where do they come from?
@@ -142,6 +148,8 @@ FROM movies.customers
 GROUP BY country
 ORDER BY COUNT(*) DESC
 ```
+![](Q12.png)  ![](Q12a.png)
+
 13. If MovieNow decides to reward it highest paying customer. Who would that customer be and what country would that customer be residing?.
 ```sql
 --Who is the highest paying customer and where does this customer reside?
@@ -157,6 +165,8 @@ GROUP BY c.name, c.country
 ORDER BY total_amount_paid DESC
 LIMIT 1
 ```
+![](Q13.png)
+
 14. Which country brings in the most revenue?
 ```sql
 -- Which country brings in the most revenue?
@@ -171,6 +181,8 @@ GROUP BY c.country
 ORDER BY revenue_by_country DESC
 LIMIT 1
 ```
+![](Q14.png)
+
 15. Which genre brings in the most revenue?
 ```sql
 -- Which genre brings in the most revenue?
@@ -183,3 +195,4 @@ GROUP BY genre
 ORDER BY revenue_by_genre DESC
 LIMIT 1
 ```
+![](Q15.png)

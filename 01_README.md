@@ -26,5 +26,6 @@ For the purpose of this project, I set out to answer the following questions;
 14. Which country brings in the most revenue?
 15. Which genre brings in the most revenue?
 
-I answered the above questions with the use of SQL. The codes are available in the Answers_and_SOL_codes file just after this file you are reading.
+I answered the above questions with the use of SQL. The codes are available [here](https://github.com/AyomideAnalyst/MovieNow-Analysis-with-SQL/blob/main/02_Answers_and_SQL_CODES.md).
+
 You can read the full documentation on medium [here](https://medium.com/@ayomideanalyst/exploratory-data-analysis-with-sql-6ef87f061639)
